@@ -1,0 +1,26 @@
+<div>
+  <div fxLayout="row">
+    <div fxFlex="80%" class="no-margin">
+        <mat-card-header class="mat-typography">
+            <mat-card-title class="mat-tittle">{{current.city}}, {{current.country}}</mat-card-title>
+        </mat-card-header>
+
+    </div>
+    <div fxFlex class="mat-subheading-2 no-margin">{{current.date | date:'EEEE MMM d'}}</div>
+  </div>
+
+
+  <div fxLayout="row">
+    <div fxFlex="66%">
+      <img [src]= 'current.image' height="100" width="100">
+    </div>
+    <div fxFlex class="mat-display-3 no-margin">{{current.temperature | number: '1.0-0'}}º</div>
+  </div>
+  
+  
+  <div fxLayout="row" fxLayoutAlign="center">
+      <div class="mat-caption">
+    {{current.description }}
+    </div>
+  </div>
+</div>

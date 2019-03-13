@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="accent">Clima Local</mat-toolbar>
+<div fxLayoutAlign="center" class="mat-caption"> clima actual en tu ciudad!</div>
+<div fxLayout="row">
+  <div fxFlex></div>
+  <div fxFlex="320px">
+      <mat-card >
+          <mat-card-header class="mat-typography">
+            <mat-card-title><h1>Clima actual</h1></mat-card-title>
+          </mat-card-header>
+          <app-weather></app-weather>
+        </mat-card>
+  </div>
+  <div fxFlex></div>
+</div>
+<router-outlet></router-outlet>
